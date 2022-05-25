@@ -62,8 +62,15 @@ h2 {
 
 p {
     font-family: 'Barlow', sans-serif;
+    font-size: 18px;
     font-weight: 600;
     color: hsl(213, 9%, 39%)
+}
+a {
+    font-size: 18px;
+}
+div {
+    font-size: 0;
 }
 
 .title {
@@ -123,6 +130,39 @@ a {
     bottom: -50px;
 }
 
+.testimonial {
+    padding: 25px;
+    text-align: center;
+}
+.testimonial img {
+    border-radius: 100px;
+    width: 25%;
+    margin-bottom: 30px;
+}
+.testimonial p {
+    margin-bottom: 30px;
+}
+.testimonial b {
+    color: #000;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+.client-testimonials h2 {
+    font-size: 18px;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 5px;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery > .item {
+    flex: 50%;
+}
+div.item {
+    font-size: 0;
+}
 @media (min-width: 1440px) {
     h1 {
         font-size: 50px;
@@ -136,11 +176,29 @@ a {
         display: flex;
         align-items: center;
     }
+    .items-testimonial {
+        display: flex;
+    }
+    .client-testimonials {
+        padding: 100px;
+    }
+    .gallery > .item {
+        flex: 25%;
+    }
+    .testimonial {
+        padding: 50px;
+    }
     .transform div, .stand-out div, .dyptique{
         width: 50%;
     }
+    .dyptique {
+        display: flex;
+        justify-content: center;
+    }
     .graphic-design .content-txt, .photography .content-txt {
+        padding: 0;
         bottom: 0;
+        width: 70%;
     }
     header {
         background-size: cover; 
@@ -149,7 +207,7 @@ a {
     }
 
     .content-txt {
-        padding: 0 3em;
+        padding: 90px;
         text-align: start;
     }
     .dyptiqueSection .content-txt { 
